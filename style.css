@@ -11,6 +11,8 @@ a { color: var(--accent); }
 nav { margin-bottom: 32px; font-size: 0.95rem; }
 nav a { margin-right: 16px; }
 footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--rule); }
-.download { display: inline-block; margin-top: 16px; padding: 12px 22px; border-radius: 12px; background: var(--accent); color: #fff; font-weight: 600; text-decoration: none; }
-.download:hover { opacity: 0.9; }
-p:has(> .download) + .meta { margin-top: -8px; }
+/* Apple's badge, unaltered, at least 40px tall with clear space of a quarter of its height. */
+.download { margin: 24px 0 14px; }
+.download a, .download img { display: block; width: fit-content; }
+.download img { height: 54px; width: auto; }
+.download + .meta { margin-top: 0; }
